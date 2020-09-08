@@ -11,9 +11,11 @@ export default function mapFormDataBeforeSaving(data) {
           styles: data.settings.formPlacement?.popup?.styles,
           posts: {
             all: data.settings.formPlacement?.popup?.posts?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.popup?.posts?.selected,
           },
           pages: {
             all: data.settings.formPlacement?.popup?.pages?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.popup?.pages?.selected,
           },
         },
         fixed_bar: {
@@ -23,9 +25,11 @@ export default function mapFormDataBeforeSaving(data) {
           position: data.settings.formPlacement?.fixedBar?.position,
           posts: {
             all: data.settings.formPlacement?.fixedBar?.posts?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.fixedBar?.posts?.selected,
           },
           pages: {
             all: data.settings.formPlacement?.fixedBar?.pages?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.fixedBar?.pages?.selected,
           },
         },
         below_posts: {
@@ -33,9 +37,11 @@ export default function mapFormDataBeforeSaving(data) {
           styles: data.settings.formPlacement?.belowPosts?.styles,
           posts: {
             all: data.settings.formPlacement?.belowPosts?.posts?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.belowPosts?.posts?.selected,
           },
           pages: {
             all: data.settings.formPlacement?.belowPosts?.pages?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.belowPosts?.pages?.selected,
           },
         },
         slide_in: {
@@ -45,9 +51,11 @@ export default function mapFormDataBeforeSaving(data) {
           styles: data.settings.formPlacement?.slideIn?.styles,
           posts: {
             all: data.settings.formPlacement?.slideIn?.posts?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.slideIn?.posts?.selected,
           },
           pages: {
             all: data.settings.formPlacement?.slideIn?.pages?.all === true ? '1' : '',
+            selected: data.settings.formPlacement?.slideIn?.pages?.selected,
           },
         },
         others: {
