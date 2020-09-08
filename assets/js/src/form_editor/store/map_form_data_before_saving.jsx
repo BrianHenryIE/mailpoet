@@ -9,6 +9,8 @@ export default function mapFormDataBeforeSaving(data) {
           exit_intent_enabled: data.settings.formPlacement?.popup?.exitIntentEnabled ? '1' : '',
           delay: data.settings.formPlacement?.popup?.delay,
           styles: data.settings.formPlacement?.popup?.styles,
+          categories: data.settings.formPlacement?.popup?.categories ?? [],
+          tags: data.settings.formPlacement?.popup?.tags ?? [],
           posts: {
             all: data.settings.formPlacement?.popup?.posts?.all === true ? '1' : '',
             selected: data.settings.formPlacement?.popup?.posts?.selected,
@@ -23,6 +25,8 @@ export default function mapFormDataBeforeSaving(data) {
           delay: data.settings.formPlacement?.fixedBar?.delay,
           styles: data.settings.formPlacement?.fixedBar?.styles,
           position: data.settings.formPlacement?.fixedBar?.position,
+          categories: data.settings.formPlacement?.fixedBar?.categories ?? [],
+          tags: data.settings.formPlacement?.fixedBar?.tags ?? [],
           posts: {
             all: data.settings.formPlacement?.fixedBar?.posts?.all === true ? '1' : '',
             selected: data.settings.formPlacement?.fixedBar?.posts?.selected,
@@ -35,6 +39,8 @@ export default function mapFormDataBeforeSaving(data) {
         below_posts: {
           enabled: data.settings.formPlacement?.belowPosts?.enabled === true ? '1' : '',
           styles: data.settings.formPlacement?.belowPosts?.styles,
+          categories: data.settings.formPlacement?.belowPosts?.categories ?? [],
+          tags: data.settings.formPlacement?.belowPosts?.tags ?? [],
           posts: {
             all: data.settings.formPlacement?.belowPosts?.posts?.all === true ? '1' : '',
             selected: data.settings.formPlacement?.belowPosts?.posts?.selected,
@@ -49,6 +55,8 @@ export default function mapFormDataBeforeSaving(data) {
           delay: data.settings.formPlacement?.slideIn?.delay,
           position: data.settings.formPlacement?.slideIn?.position,
           styles: data.settings.formPlacement?.slideIn?.styles,
+          categories: data.settings.formPlacement?.slideIn?.categories ?? [],
+          tags: data.settings.formPlacement?.slideIn?.tags ?? [],
           posts: {
             all: data.settings.formPlacement?.slideIn?.posts?.all === true ? '1' : '',
             selected: data.settings.formPlacement?.slideIn?.posts?.selected,
