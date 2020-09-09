@@ -128,7 +128,6 @@ export default function mapFormDataAfterLoading(data) {
       backgroundImageUrl: data.settings.background_image_url,
       backgroundImageDisplay: data.settings.background_image_display,
       closeButton: data.settings.close_button ?? defaults.formStyles.closeButton,
-
     },
   };
 
